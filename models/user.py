@@ -1,7 +1,6 @@
 import sqlite3
 from db import db
 
-
 class UserModel(db.Model):
     __tablename__ = 'users'
 
@@ -17,11 +16,10 @@ class UserModel(db.Model):
         db.session.add(self)
         db.session.commit()
 
-    @classmethod  # menggunakan current class
-    # cls pada def menggantikan pemanggilan class User karena sudah ada @classmethod diatas
+    @classmethod
     def find_by_username(cls, username):
         return cls.query.filter_by(username=username).first()
 
-    @classmethod  # menggunakan current class
+    @classmethod
     def find_by_id(cls, _id):
         return cls.query.filter_by(id=_id).first()

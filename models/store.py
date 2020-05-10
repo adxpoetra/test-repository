@@ -1,6 +1,4 @@
-
 from db import db
-
 
 class StoreModel(db.Model):
     __tablename__ = 'stores'
@@ -18,7 +16,6 @@ class StoreModel(db.Model):
 
     @classmethod
     def find_by_name(cls, name):
-        # select * from items where name=name limit 1
         return cls.query.filter_by(name=name).first()
 
     def save_to_db(self):

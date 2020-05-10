@@ -1,18 +1,5 @@
-# FLASK PROJECT BASIC APPS
+# Stores REST Api
 
-Project ini adalah project dasar pembuatan aplikasi berbasis web dengan memanfaatkan Python, Flask dan SQLAlchemy
+This is built with Flask, Flask-RESTful, Flask-JWT, and Flask-SQLAlchemy.
 
-##INSTALATION
-
-```
-pip instal Flask
-pip install flask_SQLAlchemy
-python app.py
-```
-
-##DESCRIPTION
-
-
-##IMPLEMENTATION
-
-Project ini belum berisi aplikasi apapun
+Deployed on Heroku.
