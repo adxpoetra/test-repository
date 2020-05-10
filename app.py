@@ -15,12 +15,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'bagus@2018'
 api = Api(app)
 
-
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
-
 # merubah auth menjadi login
 app.config['JWT_AUTH_URL_RULE'] = '/login'
 # config JWT to expire within half an hour
