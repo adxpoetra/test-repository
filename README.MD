@@ -14,4 +14,5 @@ python app.py
 
 
 ##IMPLEMENTATION
+
 Project ini belum berisi aplikasi apapun
